@@ -1,0 +1,9 @@
+DirectX 12 for Cellar bottles that run DXMT on a CrossOver-source Wine engine.
+
+From VKD3D-Proton-MacOS v4.5, https://github.com/metalsharp/VKD3D-Proton-MacOS (release files, SHA-256 checked):
+  x86_64-windows/d3d12.dll, d3d12core.dll   VKD3D-Proton (LGPL-2.1)
+  x86_64-windows/dxgi.dll, d3d11.dll, d3d10core.dll   DXVK (zlib)
+  moltenvk/libMoltenVK.dylib                MoltenVK (Apache-2.0)
+  moltenvk/libmetalirconverter.dylib        Apple Metal shader converter (see its licence file)
+The DLLs are unchanged except for the 32-byte "Wine builtin DLL" marker Wine needs to load them from its DLL path
+(what `winebuild --builtin` writes).
